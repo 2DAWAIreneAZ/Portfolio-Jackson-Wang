@@ -244,8 +244,8 @@ header {
 		border-top: 3px solid var(--light);
 		position: relative;
 		display: flex;
-		margin-left: 2.5rem;
-		margin-right: 2.5rem;
+		margin-left: 3rem;
+		margin-right: 3rem;
 
 	}
 
@@ -277,3 +277,17 @@ header {
 	}
 }
 
+.interludio {
+	height: 150vh;
+
+	img {
+		width: 100%;
+	}
+
+	p {
+		text-align: center;
+		font-size: 18px;
+	}
+
+	
+}
