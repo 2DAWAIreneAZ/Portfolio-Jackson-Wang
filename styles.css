@@ -76,7 +76,6 @@ header {
 		.brand {
 			font-family: "Semakin";
 			font-size: 48px;
-			text-transform: uppercase;
 
 			display: flex;
 			text-align: center;
@@ -139,6 +138,34 @@ header {
 			margin-bottom: -416px;
 		}
 	}
+}
+
+@media screen and (max-width: 1300px) {
+	header {
+		margin: .75rem;
+	}
+
+	header .branding {
+			flex: 2;
+		}
+
+	nav {
+		border: 1px solid red;
+		flex: 1;
+
+		ul .menu-off {
+			display: none;
+		}
+	}
+
+	.burguer {
+		display: flex;
+    height: 20px;
+    margin: 0;
+	}
+
+
+		
 }
 
 /*@media screen and (max-width: 855px) {
@@ -289,5 +316,5 @@ header {
 		font-size: 18px;
 	}
 
-	
+
 }
