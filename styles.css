@@ -1,0 +1,136 @@
+@font-face {
+	font-family: "Saira";
+	src: url(assets/font/Saira-VariableFont_wdth\,wght.ttf),
+			 url(assets/font/Saira-VariableFont_wdth_wght.woff);
+}
+
+@font-face {
+	font-family: "Saira-Italic";
+	src: url(assets/font/Saira-Italic-VariableFont_wdth\,wght.ttf),
+			 url(assets/font/Saira-Italic-VariableFont_wdth_wght.woff);
+}
+
+@font-face {
+	font-family: "Semakin";
+	src: url(assets/font/Semakin.ttf),
+			 url(assets/font/Semakin.woff);
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--light: rgba(255,255,255, 1);
+}
+
+body, html {
+	height: 100%;
+
+	background-image: url(assets/img/BG.jpg);
+	background-size: cover;
+
+	font-family: "Saira";
+	color: var(--light);
+} 
+
+h1 {
+	font-family: "Semakin";
+	font-size: 90px;
+}
+
+header {
+	height: 100px;
+	
+	display: flex;
+	justify-content: space-between;
+
+	margin: 1rem 3rem;
+
+	.branding {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		flex: 1;
+
+		
+		.logo {
+			width: 110px;
+			height: 110px;
+
+			background-image: url(assets/img/logoJackson.png);
+			background-size: 90%;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		.brand {
+			font-family: "Semakin";
+			font-size: 48px;
+			text-transform: uppercase;
+
+			display: flex;
+			text-align: center;
+		}
+	}
+
+	nav {
+		display: flex;
+		flex: 1;
+
+		.main-nav {
+			display: flex;
+			flex: 1;
+			
+			ul {
+				font-family: "Saira";
+				font-size: 24px;
+				
+				list-style: none;
+				
+				display: flex;
+				justify-content: space-between;
+				flex: 1;
+				align-items: center;
+			}
+
+			li {
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+.hero-content {
+	height: 150vh;
+	margin-bottom: 10rem;
+
+	
+	.hero-title {
+		margin-top: 8rem;
+		padding-left: 5.75rem;
+		margin-bottom: 3.5rem;
+	}
+	
+	.hero-img {
+		height: 1033.4481px;
+		width: 1561.5584px;
+		
+		overflow: hidden;
+		
+		margin: auto;
+		
+		
+		img {
+			height: 1867.3636px;
+			width: 1561.5584px;
+			
+			margin-top: -416px;
+			margin-bottom: -416px;
+		}
+	}
+}
+
+
