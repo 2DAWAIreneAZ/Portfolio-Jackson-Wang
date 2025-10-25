@@ -33,12 +33,20 @@ body, html {
 	background-size: cover;
 
 	font-family: "Saira";
+	font-size: 24px;
 	color: var(--light);
 } 
 
 h1 {
 	font-family: "Semakin";
 	font-size: 90px;
+}
+
+h2 {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 72px;
+	font-weight: 550;
 }
 
 header {
@@ -54,7 +62,6 @@ header {
 		justify-content: start;
 		align-items: center;
 		flex: 1;
-
 		
 		.logo {
 			width: 110px;
@@ -79,32 +86,33 @@ header {
 	nav {
 		display: flex;
 		flex: 1;
-
+		
 		.main-nav {
+			font-family: "Saira";
+			font-size: 24px;
+			
+			list-style: none;
+
 			display: flex;
 			flex: 1;
-			
-			ul {
-				font-family: "Saira";
-				font-size: 24px;
-				
-				list-style: none;
-				
-				display: flex;
-				justify-content: space-between;
-				flex: 1;
-				align-items: center;
-			}
+			justify-content: space-between;
+			align-items: center;
 
 			li {
 				text-transform: uppercase;
+				list-style: none;
+				
+				a {
+					text-decoration: none;
+					color: var(--light);
+				}
 			}
 		}
 	}
 }
 
 .hero-content {
-	height: 150vh;
+	height: 140vh;
 	margin-bottom: 10rem;
 
 	
@@ -133,4 +141,139 @@ header {
 	}
 }
 
+/*@media screen and (max-width: 855px) {
+	header nav {
+		border: 1px solid red;
+		flex: 1;
+
+		ul {
+			justify-content: center;
+		}
+
+		ul .menu-off {
+			display: none;
+		}
+	}
+
+	ul li ul li {
+        margin-top: 5px;
+    }
+    .burguer {
+        display: flex;
+        height: 20px;
+        margin: 0;
+
+				li {
+					list-style: none;
+				}
+    }
+
+		header .branding {
+			flex: 2;
+		}
+
+		.hero-title {
+
+		}
+}*/
+
+/* ----------------------------------------------------------- BIOGRAPHY -------------------------------------------------------------- */
+
+.biography-title {
+		padding-bottom: 3rem;
+
+	}
+
+.biography {
+	height: 270vh;
+	
+	.biography-part1 {
+		margin-bottom: 10rem;
+		display: flex;
+
+		.biography-content1 {
+			flex: 1;
+
+			p {
+				padding: 1rem 4rem .5rem 0rem;
+			}
+		}
+	
+		.biography-img1 {		
+			text-align: center;
+	
+			flex: 1;
+			
+		}
+
+	}
+
+	.biography-part2 {
+		display: flex;
+		
+		.biography-content2 {
+			flex: 1;
+
+			justify-content: center;
+
+			p {
+				padding: .7rem 1rem .5rem 4rem;
+			}
+		}
+	
+		.biography-img2 {
+			height: 1100px;
+			flex: 1;
+
+			text-align: center;
+			
+			img {
+				height: 100%;
+			}
+
+		}
+	}
+
+	
+}
+
+.biography-timeline {
+	height: 50vh;
+	
+	.timeline {
+		border-top: 3px solid var(--light);
+		position: relative;
+		display: flex;
+		margin-left: 2.5rem;
+		margin-right: 2.5rem;
+
+	}
+
+	.timeline-item {
+		flex: 1;
+
+		text-align: center;
+
+			.dot {
+				position: relative;
+				top: -11.5px;
+				left: 47.5%;
+				width: 15px;
+				height: 20px;
+				background-color: var(--light);
+				border-radius: 50%;
+			}
+
+			.timeline-content > p {
+				font-size: 30px;
+				margin-bottom: .5rem;
+			}
+
+			.timeline-info p {
+				line-height: 130%;
+				font-size: 20px;
+				margin-bottom: .5rem;
+			}
+	}
+}
 
