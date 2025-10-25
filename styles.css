@@ -140,7 +140,7 @@ header {
 	}
 }
 
-@media screen and (max-width: 1300px) {
+/*@media screen and (max-width: 1300px) {
 	header {
 		margin: .75rem;
 	}
@@ -166,7 +166,7 @@ header {
 
 
 		
-}
+}*/
 
 /*@media screen and (max-width: 855px) {
 	header nav {
@@ -315,6 +315,81 @@ header {
 		text-align: center;
 		font-size: 18px;
 	}
+}
 
+/* -------------------------------------------------- ALBUMS ---------------------------------------------------------------------- */
+
+.discography {
+	height: 300vh;
 
 }
+
+.discography-title {
+	margin-bottom: 5%;
+}
+
+.latest-release {
+	text-align: center;
+	font-size: 36px;
+
+	margin-bottom: 2rem;
+}
+
+.albums {
+	display: flex;
+	flex-flow: column;
+
+	text-align: center;
+
+	.card {
+		border: 2px solid var(--light);
+
+		margin: auto;
+		padding-left: 1rem;
+		padding-right: 1rem;
+
+		.card-title {
+			margin: 1rem 1rem 1rem 0rem;
+			font-size: 2rem;
+			text-align: left;
+			text-transform: uppercase;
+		}
+
+		.card-date {
+			margin: .25rem .25rem .25rem 0rem;
+			text-align: left;
+		}
+	}
+
+	.card-img {
+		border: 2px solid var(--light);
+		display: flex;
+
+		margin: auto;
+
+		height: 450px;
+		width: 450px;
+	}
+
+	.magic2-music iframe {
+		margin-top: 2rem;
+
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
