@@ -348,6 +348,16 @@ header {
 		padding-left: 1rem;
 		padding-right: 1rem;
 
+		.card-img {
+			border: 2px solid var(--light);
+			display: flex;
+	
+			margin: auto;
+	
+			height: 450px;
+			width: 450px;
+		}
+
 		.card-title {
 			margin: 1rem 1rem 1rem 0rem;
 			font-size: 2rem;
@@ -361,21 +371,14 @@ header {
 		}
 	}
 
-	.card-img {
-		border: 2px solid var(--light);
-		display: flex;
-
-		margin: auto;
-
-		height: 450px;
-		width: 450px;
-	}
-
+	
 	.magic2-music iframe {
 		margin-top: 2rem;
-
-
+		padding: 0rem 1rem 0rem 1rem;
 	}
+
+
+
 }
 
 
