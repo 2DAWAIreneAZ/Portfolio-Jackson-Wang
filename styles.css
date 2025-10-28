@@ -325,64 +325,161 @@ header {
 }
 
 .discography-title {
-	margin-bottom: 5%;
+	margin-bottom: 2.5%;
 }
 
 .latest-release {
 	text-align: center;
-	font-size: 36px;
+	
+	font-size: 40px;
 
 	margin-bottom: 2rem;
 }
 
-.albums {
+/* ---------------------------------------- MAGIC MAN 2 ----------------------------------------------- */
+
+.album-magic2 {
 	display: flex;
-	flex-flow: column;
+	flex-direction: column;
 
 	text-align: center;
 
-	.card {
-		border: 2px solid var(--light);
+	.magic2 {
+		display: flex;
+		flex: 1;
 
 		margin: auto;
-		padding-left: 1rem;
-		padding-right: 1rem;
+		margin-left: 12.5rem;		
 
-		.card-img {
+		.card {
 			border: 2px solid var(--light);
-			display: flex;
 	
 			margin: auto;
+			
+			padding-left: 1rem;
+			padding-right: 1rem;
 	
-			height: 450px;
-			width: 450px;
-		}
-
-		.card-title {
-			margin: 1rem 1rem 1rem 0rem;
-			font-size: 2rem;
-			text-align: left;
-			text-transform: uppercase;
-		}
-
-		.card-date {
-			margin: .25rem .25rem .25rem 0rem;
-			text-align: left;
+			.card-img {
+				border: 2px solid var(--light);
+				display: flex;
+		
+				margin: auto;
+		
+				height: 450px;
+				width: 450px;
+			}
+	
+			.card-title {
+				margin: 1rem 1rem 1rem 0rem;
+				font-size: 2rem;
+				text-align: left;
+				text-transform: uppercase;
+			}
+	
+			.card-date {
+				margin: .25rem .25rem .25rem 0rem;
+				text-align: left;
+			}
 		}
 	}
 
-	
+	.magic2-content {
+		display: flex;
+		flex-direction: column;
+
+		margin-left: 5rem;
+		margin-right: 7rem;
+
+		text-align: left;
+		justify-content: center;
+
+		p {
+			padding: 0.8rem;
+		}
+	}
+
+	.magic2-music {
+		margin-bottom: 10rem;
+	}
+
 	.magic2-music iframe {
+		margin-top: 2rem;
+		padding: 0rem 1rem 0rem 1rem;
+	}
+}
+
+/* ---------------------------------------------- MAGIC MAN -------------------------------------------------- */
+
+.album-magic {
+	display: flex;
+
+	flex-direction: column;
+
+	text-align: center;
+
+	.magic {
+		display: flex;
+		flex: 1;
+
+		margin: auto;
+		margin-left: 5rem;
+
+		.card-sm {
+			border: 2px solid var(--light);
+	
+			margin: auto;
+			
+			padding-left: 1rem;
+			padding-right: 1rem;
+	
+			margin-left: 7.5rem;
+	
+			.card-img {
+				border: 2px solid var(--light);
+				display: flex;
+		
+				margin: auto;
+		
+				height: 400px;
+				width: 400px;
+			}
+	
+			.card-title {
+				margin: 1rem 1rem 1rem 0rem;
+				font-size: 2rem;
+				text-align: left;
+				text-transform: uppercase;
+			}
+	
+			.card-date {
+				margin: .25rem .25rem .25rem 0rem;
+				text-align: left;
+			}
+		}
+
+	}
+
+	.magic-content {
+		display: flex;
+
+		margin-left: 5rem;
+		margin-right: 7rem;
+
+		align-items: center;
+		text-align: left;
+	}
+
+	.magic-music {
+		margin-bottom: 2.5rem;
+	}
+	
+	.magic-music iframe {
 		margin-top: 2rem;
 		padding: 0rem 1rem 0rem 1rem;
 	}
 
 
-
 }
-
-
-
 
 
 
