@@ -351,7 +351,7 @@ header {
 		margin: auto;
 		margin-left: 12.5rem;		
 
-		.card {
+		.card-big {
 			border: 2px solid var(--light);
 	
 			margin: auto;
@@ -424,7 +424,7 @@ header {
 		margin: auto;
 		margin-left: 5rem;
 
-		.card-sm {
+		.card {
 			border: 2px solid var(--light);
 	
 			margin: auto;
@@ -500,7 +500,7 @@ header {
 		margin: auto;
 		margin-left: 5rem;
 
-		.card-sm {
+		.card {
 			border: 2px solid var(--light);
 	
 			margin: auto;
@@ -575,7 +575,7 @@ header {
 		margin: auto;
 		margin-left: 5rem;
 
-		.card-sm {
+		.card {
 			border: 2px solid var(--light);
 	
 			margin: auto;
@@ -634,7 +634,58 @@ header {
 	}
 }
 
+/* ---------------------------------------------- SINGLES -------------------------------------------------- */
 
+.most-important-singles {
+	border: 1px solid green;
+
+	display: flex;
+	flex: 1;
+
+	.single-letloose, .single-Jackson-Wang {
+		display: flex;
+		flex: 1;
+
+		margin: auto;
+		margin-left: 5rem;
+
+		.card-sm {
+			border: 2px solid var(--light);
+	
+			margin: auto;
+			
+			padding-left: 1rem;
+			padding-right: 1rem;
+	
+			margin-left: 7.5rem;
+	
+			.card-img {
+				border: 2px solid var(--light);
+				display: flex;
+		
+				margin: auto;
+		
+				height: 400px;
+				width: 400px;
+			}
+	
+			.card-title {
+				margin: 1rem 1rem 1rem 0rem;
+				font-size: 2rem;
+				text-align: left;
+				text-transform: uppercase;
+			}
+	
+			.card-date {
+				margin: .25rem .25rem .25rem 0rem;
+				text-align: left;
+			}
+		}
+
+
+
+	}
+}
 
 
 
