@@ -401,23 +401,23 @@ header {
 	.magic2-music {
 		margin-bottom: 10rem;
 	}
-
+	
 	.magic2-music iframe {
 		margin-top: 2rem;
 		padding: 0rem 1rem 0rem 1rem;
 	}
 }
 
-/* ---------------------------------------------- MAGIC MAN -------------------------------------------------- */
+/* ------------------------------------ MAGIC MAN, LOST&FOUND, MIRRORS ----------------------------------------- */
 
-.album-magic {
+.album-magic, .album-lostfound, .album-mirrors {
 	display: flex;
 
 	flex-direction: column;
 
 	text-align: center;
 
-	.magic {
+	.magic, .lostfound, .mirrors {
 		display: flex;
 		flex: 1;
 
@@ -459,7 +459,7 @@ header {
 
 	}
 
-	.magic-content {
+	.magic-content, .lostfound-content, .mirrors-content {
 		display: flex;
 		flex-direction: column;
 
@@ -474,165 +474,16 @@ header {
 		}
 	}
 
-	.magic-music {
+	.magic-music, .lostfound-music, .mirrors-music {
 		margin-bottom: 10rem;
 	}
 	
-	.magic-music iframe {
+	.magic-music iframe, .lostfound-music iframe, .mirrors-music iframe {
 		margin-top: 2rem;
 		padding: 0rem 1rem 0rem 1rem;
 	}
 }
 
-/* ---------------------------------------------- LOST&FOUND -------------------------------------------------- */
-
-.album-lostfound {
-	display: flex;
-
-	flex-direction: column;
-
-	text-align: center;
-
-	.lostfound {
-		display: flex;
-		flex: 1;
-
-		margin: auto;
-		margin-left: 5rem;
-
-		.card {
-			border: 2px solid var(--light);
-	
-			margin: auto;
-			
-			padding-left: 1rem;
-			padding-right: 1rem;
-	
-			margin-left: 7.5rem;
-	
-			.card-img {
-				border: 2px solid var(--light);
-				display: flex;
-		
-				margin: auto;
-		
-				height: 400px;
-				width: 400px;
-			}
-	
-			.card-title {
-				margin: 1rem 1rem 1rem 0rem;
-				font-size: 2rem;
-				text-align: left;
-				text-transform: uppercase;
-			}
-	
-			.card-date {
-				margin: .25rem .25rem .25rem 0rem;
-				text-align: left;
-			}
-		}
-	}
-
-	.lostfound-content {
-		display: flex;
-		flex-direction: column;
-
-		margin-left: 5rem;
-		margin-right: 7rem;
-
-		text-align: left;
-		justify-content: center;
-
-		p {
-			padding: 0.8rem;
-		}
-	}
-
-	.lostfound-music {
-		margin-bottom: 10rem;
-	}
-	
-	.lostfound-music iframe {
-		margin-top: 2rem;
-		padding: 0rem 1rem 0rem 1rem;
-	}
-}
-
-/* ---------------------------------------------- MIRRORS -------------------------------------------------- */
-
-.album-mirrors {
-	display: flex;
-
-	flex-direction: column;
-
-	text-align: center;
-
-	.mirrors {
-		display: flex;
-		flex: 1;
-
-		margin: auto;
-		margin-left: 5rem;
-
-		.card {
-			border: 2px solid var(--light);
-	
-			margin: auto;
-			
-			padding-left: 1rem;
-			padding-right: 1rem;
-	
-			margin-left: 7.5rem;
-	
-			.card-img {
-				border: 2px solid var(--light);
-				display: flex;
-		
-				margin: auto;
-		
-				height: 400px;
-				width: 400px;
-			}
-	
-			.card-title {
-				margin: 1rem 1rem 1rem 0rem;
-				font-size: 2rem;
-				text-align: left;
-				text-transform: uppercase;
-			}
-	
-			.card-date {
-				margin: .25rem .25rem .25rem 0rem;
-				text-align: left;
-			}
-		}
-	}
-
-	.mirrors-content {
-		display: flex;
-		flex-direction: column;
-
-		margin-left: 5rem;
-		margin-right: 7rem;
-
-		text-align: left;
-		justify-content: center;
-
-		p {
-			padding: 0.8rem;
-		}
-	}
-
-	.mirrors-music {
-		margin-bottom: 10rem;
-	}
-	
-	.mirrors-music iframe {
-		margin-top: 2rem;
-		padding: 0rem 1rem 0rem 1rem;
-	}
-}
 
 /* ---------------------------------------------- SINGLES -------------------------------------------------- */
 
