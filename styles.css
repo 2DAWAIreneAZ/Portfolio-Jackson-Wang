@@ -487,13 +487,16 @@ header {
 
 /* ---------------------------------------------- SINGLES -------------------------------------------------- */
 
-.most-important-singles {
+.most-important-singles, .other-singles {
 	border: 1px solid green;
 
 	display: flex;
 	flex: 1;
+	
+	margin-bottom: 7rem;
+	margin-top: 4rem;
 
-	.single-letloose, .single-Jackson-Wang {
+	.single-letloose, .single-Jackson-Wang  {
 		display: flex;
 		flex: 1;
 
@@ -532,11 +535,50 @@ header {
 				text-align: left;
 			}
 		}
-
-
-
 	}
+
+	.single-100ways, .single-blow, .single-cheetah {
+		display: flex;
+		flex: 3;
+
+		margin: auto;
+		margin-left: 5rem;
+
+		.card-sm {
+			border: 2px solid var(--light);
+	
+			margin: auto;
+			
+			padding-left: .5rem;
+			padding-right: .5rem;
+	
+			.card-img {
+				border: 2px solid var(--light);
+				display: flex;
+		
+				margin: auto;
+		
+				height: 350px;
+				width: 350px;
+			}
+	
+			.card-title {
+				margin: 1rem 1rem 1rem 0rem;
+				font-size: 1.5rem;
+				text-align: left;
+				text-transform: uppercase;
+			}
+	
+			.card-date {
+				margin: .25rem .25rem .25rem 0rem;
+				text-align: left;
+			}
+		}
+	}
+
+	
 }
+
 
 
 
