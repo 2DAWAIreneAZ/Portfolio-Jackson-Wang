@@ -335,130 +335,74 @@ header {
 	margin-bottom: 2rem;
 }
 
-/* ---------------------------------------- MAGIC MAN 2 ----------------------------------------------- */
+/* ------------------ CLASES Y ESTILOS COMUNES EN ALBUMS Y SINGLES --------------------- */
+/* Todos presentan estos estilos iguales */
 
-.album-magic2 {
+.albums {
 	display: flex;
+
 	flex-direction: column;
 
 	text-align: center;
+}
 
-	.magic2 {
+.card {
+	border: 2px solid var(--light);
+
+	margin: auto;
+	
+	padding-left: 1rem;
+	padding-right: 1rem;
+
+	.card-img {
+		border: 2px solid var(--light);
 		display: flex;
-		flex: 1;
 
 		margin: auto;
-		margin-left: 12.5rem;		
-
-		.card-big {
-			border: 2px solid var(--light);
-	
-			margin: auto;
-			
-			padding-left: 1rem;
-			padding-right: 1rem;
-	
-			.card-img {
-				border: 2px solid var(--light);
-				display: flex;
-		
-				margin: auto;
-		
-				height: 450px;
-				width: 450px;
-			}
-	
-			.card-title {
-				margin: 1rem 1rem 1rem 0rem;
-				font-size: 2rem;
-				text-align: left;
-				text-transform: uppercase;
-			}
-	
-			.card-date {
-				margin: .25rem .25rem .25rem 0rem;
-				text-align: left;
-			}
-		}
 	}
 
-	.magic2-content {
-		display: flex;
-		flex-direction: column;
+	/* Para el primer album (es más grande)*/
+	.card-img-lg {
+		height: 450px;
+		width: 450px;
+	}
 
-		margin-left: 5rem;
-		margin-right: 7rem;
+	/* Para el resto de albums + los 2 primeros singles importantes */
+	.card-img-md {
+		height: 390px;
+		width: 390px;
+	}
 
+	/* Para el resto de canciones */
+	.card-img-sm {
+		height: 330px;
+		width: 330px;
+	}
+
+	/* Aquí uelven a presentar los mismos estilos */
+	.card-title {
+		margin: 1rem 1rem 1rem 0rem;
+		font-size: 2rem;
 		text-align: left;
-		justify-content: center;
-
-		p {
-			padding: 0.8rem;
-		}
+		text-transform: uppercase;
 	}
 
-	.magic2-music {
-		margin-bottom: 10rem;
-	}
-	
-	.magic2-music iframe {
-		margin-top: 2rem;
-		padding: 0rem 1rem 0rem 1rem;
+	.card-date {
+		margin: .25rem .25rem .25rem 0rem;
+		text-align: left;
 	}
 }
 
-/* ------------------------------------ MAGIC MAN, LOST&FOUND, MIRRORS ----------------------------------------- */
+	.album-music {
+	margin-bottom: 10rem;
+}
 
-.album-magic, .album-lostfound, .album-mirrors {
-	display: flex;
+.album-music iframe {
+	margin-top: 2rem;
+	padding: 0rem 1rem 0rem 1rem;
+}
 
-	flex-direction: column;
-
-	text-align: center;
-
-	.magic, .lostfound, .mirrors {
-		display: flex;
-		flex: 1;
-
-		margin: auto;
-		margin-left: 5rem;
-
-		.card {
-			border: 2px solid var(--light);
-	
-			margin: auto;
-			
-			padding-left: 1rem;
-			padding-right: 1rem;
-	
-			margin-left: 7.5rem;
-	
-			.card-img {
-				border: 2px solid var(--light);
-				display: flex;
-		
-				margin: auto;
-		
-				height: 400px;
-				width: 400px;
-			}
-	
-			.card-title {
-				margin: 1rem 1rem 1rem 0rem;
-				font-size: 2rem;
-				text-align: left;
-				text-transform: uppercase;
-			}
-	
-			.card-date {
-				margin: .25rem .25rem .25rem 0rem;
-				text-align: left;
-			}
-		}
-
-	}
-
-	.magic-content, .lostfound-content, .mirrors-content {
+.albums-content {
 		display: flex;
 		flex-direction: column;
 
@@ -473,13 +417,27 @@ header {
 		}
 	}
 
-	.magic-music, .lostfound-music, .mirrors-music {
-		margin-bottom: 10rem;
-	}
-	
-	.magic-music iframe, .lostfound-music iframe, .mirrors-music iframe {
-		margin-top: 2rem;
-		padding: 0rem 1rem 0rem 1rem;
+/* ----------------------- MAGIC MAN 2 ------------------------ */
+
+.magic2 {
+	display: flex;
+	flex: 1;
+
+	margin: auto;
+	margin-left: 12.5rem;		
+}
+
+/* --------------- MAGIC MAN, LOST&FOUND, MIRRORS ---------------------- */
+
+.magic, .lostfound, .mirrors {
+	display: flex;
+	flex: 1;
+
+	margin: auto;
+	margin-left: 5rem;
+
+	.card {
+		margin-left: 7.5rem;	
 	}
 }
 
@@ -502,81 +460,38 @@ header {
 		margin: auto;
 		margin-left: 5rem;
 
-		.card-sm {
-			border: 2px solid var(--light);
-	
-			margin: auto;
-			
-			padding-left: 1rem;
-			padding-right: 1rem;
-	
-			margin-left: 7.5rem;
-	
-			.card-img {
-				border: 2px solid var(--light);
-				display: flex;
-		
-				margin: auto;
-		
-				height: 400px;
-				width: 400px;
-			}
-	
-			.card-title {
-				margin: 1rem 1rem 1rem 0rem;
-				font-size: 2rem;
-				text-align: left;
-				text-transform: uppercase;
-			}
-	
-			.card-date {
-				margin: .25rem .25rem .25rem 0rem;
-				text-align: left;
-			}
+		.card-title {
+			margin: 1rem 1rem 1rem 0rem;
+			font-size: 2rem;
+			text-align: left;
+			text-transform: uppercase;
+		}
+
+		.card-date {
+			margin: .25rem .25rem .25rem 0rem;
+			text-align: left;
 		}
 	}
+}
 
-	.single-100ways, .single-blow, .single-cheetah {
-		display: flex;
-		flex: 3;
+.single-100ways, .single-blow, .single-cheetah {
+	display: flex;
+	flex: 3;
+
+	margin: auto;
+	margin-left: 5rem;
+
+	.card {
+		border: 2px solid var(--light);
 
 		margin: auto;
-		margin-left: 5rem;
-
-		.card-sm {
-			border: 2px solid var(--light);
-	
-			margin: auto;
-			
-			padding-left: .5rem;
-			padding-right: .5rem;
-	
-			.card-img {
-				border: 2px solid var(--light);
-				display: flex;
 		
-				margin: auto;
-		
-				height: 350px;
-				width: 350px;
-			}
-	
-			.card-title {
-				margin: 1rem 1rem 1rem 0rem;
-				font-size: 1.5rem;
-				text-align: left;
-				text-transform: uppercase;
-			}
-	
-			.card-date {
-				margin: .25rem .25rem .25rem 0rem;
-				text-align: left;
-			}
-		}
+		padding-left: .5rem;
+		padding-right: .5rem;
 	}
-
-	
 }
+
+
 
 
 
