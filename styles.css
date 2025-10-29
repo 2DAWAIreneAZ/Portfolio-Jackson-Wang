@@ -140,70 +140,6 @@ header {
 	}
 }
 
-/*@media screen and (max-width: 1300px) {
-	header {
-		margin: .75rem;
-	}
-
-	header .branding {
-			flex: 2;
-		}
-
-	nav {
-		border: 1px solid red;
-		flex: 1;
-
-		ul .menu-off {
-			display: none;
-		}
-	}
-
-	.burguer {
-		display: flex;
-    height: 20px;
-    margin: 0;
-	}
-
-
-		
-}*/
-
-/*@media screen and (max-width: 855px) {
-	header nav {
-		border: 1px solid red;
-		flex: 1;
-
-		ul {
-			justify-content: center;
-		}
-
-		ul .menu-off {
-			display: none;
-		}
-	}
-
-	ul li ul li {
-        margin-top: 5px;
-    }
-    .burguer {
-        display: flex;
-        height: 20px;
-        margin: 0;
-
-				li {
-					list-style: none;
-				}
-    }
-
-		header .branding {
-			flex: 2;
-		}
-
-		.hero-title {
-
-		}
-}*/
-
 /* ----------------------------------------------------------- BIOGRAPHY -------------------------------------------------------------- */
 
 .biography-title {
@@ -263,6 +199,8 @@ header {
 
 	
 }
+
+/* ---------------------------- TIMELINE --------------------------------- */
 
 .biography-timeline {
 	height: 50vh;
@@ -454,7 +392,9 @@ header {
 	margin-top: 4rem;
 
 	.single {
+		border: 1px solid red;
 		display: flex;
+		flex-direction: column;
 		flex: 1;
 
 		margin: auto;
@@ -471,25 +411,21 @@ header {
 			margin: .25rem .25rem .25rem 0rem;
 			text-align: left;
 		}
+
+		.single-music {
+			border: 1px solid blue;
+			display: flex;
+
+			padding: 2rem;
+		}
+
+		.single-music iframe {
+			margin: auto;
+			
+		}
 	}
 }
 
-.single-100ways, .single-blow, .single-cheetah {
-	display: flex;
-	flex: 3;
-
-	margin: auto;
-	margin-left: 5rem;
-
-	.card {
-		border: 2px solid var(--light);
-
-		margin: auto;
-		
-		padding-left: .5rem;
-		padding-right: .5rem;
-	}
-}
 
 
 
