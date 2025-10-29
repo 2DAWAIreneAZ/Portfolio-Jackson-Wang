@@ -320,8 +320,7 @@ header {
 /* -------------------------------------------------- ALBUMS ---------------------------------------------------------------------- */
 
 .discography {
-	height: 600vh;
-
+	height: 1000vh;
 }
 
 .discography-title {
@@ -487,7 +486,7 @@ header {
 
 /* ---------------------------------------------- SINGLES -------------------------------------------------- */
 
-.most-important-singles, .other-singles {
+.most-important-singles, .important-singles {
 	border: 1px solid green;
 
 	display: flex;
@@ -496,7 +495,7 @@ header {
 	margin-bottom: 7rem;
 	margin-top: 4rem;
 
-	.single-letloose, .single-Jackson-Wang  {
+	.single {
 		display: flex;
 		flex: 1;
 
