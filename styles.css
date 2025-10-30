@@ -258,7 +258,7 @@ header {
 /* -------------------------------------------------- ALBUMS ---------------------------------------------------------------------- */
 
 .discography {
-	height: 1000vh;
+	height: 850vh;
 }
 
 .discography-title {
@@ -421,6 +421,68 @@ header {
 		justify-content: center;
 	}
 }
+
+/* --------------------------------- ON TOUR ------------------------------- */
+
+.ontour {
+	height: 200vh;
+
+	.tour {
+		display: flex;
+		margin-top: 5rem;
+
+		.magic2-tour, .magic2-tour-content {
+			margin: auto;
+			flex: 1;
+			flex-direction: column;
+			margin-right: 3rem;
+
+
+			.tickets {
+				display: flex;
+				flex-direction: column;
+				
+
+				.city {
+					border: 1px solid yellowgreen;
+					background-color: rgb(61, 83, 121);
+					padding: .75rem;
+					margin: .75rem 0rem;
+				
+					.arena  {
+						font-size: .75rem;
+					}
+
+					.ticket {
+						border: 1px solid red;
+						flex-direction: row;
+						flex: 1;
+					}
+				}
+			}
+			
+		}
+
+
+		.magic2-tour img {
+			display: flex;
+			margin: auto;
+			height: 900px;
+			width: 770px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
