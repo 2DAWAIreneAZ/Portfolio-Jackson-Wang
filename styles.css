@@ -319,7 +319,7 @@ header {
 	/* Aquí uelven a presentar los mismos estilos */
 	.card-title {
 		margin: 1rem 1rem 1rem 0rem;
-		font-size: 2rem;
+		font-size: 1.75rem;
 		text-align: left;
 		text-transform: uppercase;
 	}
@@ -386,10 +386,9 @@ header {
 	flex: 1;
 	
 	margin-bottom: 7rem;
-	margin-top: 4rem;
+	margin-top: 2rem;
 
 	.single {
-		border: 1px solid red;
 		display: flex;
 		flex-direction: column;
 		flex: 1;
@@ -399,7 +398,6 @@ header {
 		margin-right: 2rem;
 
 		.single-music {
-			border: 1px solid blue;
 			display: flex;
 
 			padding: 2rem;
@@ -412,7 +410,17 @@ header {
 	}
 }
 
-/* CAMBIAR TAMAÑO LETRA, NO QUEDA BIEN PARA LA CANCIÓN DE WHY WHY WHY */
+.single-titles {
+	display: flex;
+	margin-top: 3rem;
+	
+	p {
+		font-size: 1.5rem;
+		display: flex;
+		flex: 1;
+		justify-content: center;
+	}
+}
 
 
 
