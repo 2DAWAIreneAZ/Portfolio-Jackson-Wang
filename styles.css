@@ -219,26 +219,26 @@ header {
 
 		text-align: center;
 
-			.dot {
-				position: relative;
-				top: -11.5px;
-				left: 47.5%;
-				width: 15px;
-				height: 20px;
-				background-color: var(--light);
-				border-radius: 50%;
-			}
+		.dot {
+			position: relative;
+			top: -11.5px;
+			left: 47.5%;
+			width: 15px;
+			height: 20px;
+			background-color: var(--light);
+			border-radius: 50%;
+		}
 
-			.timeline-content > p {
-				font-size: 30px;
-				margin-bottom: .5rem;
-			}
+		.timeline-content > p {
+			font-size: 30px;
+			margin-bottom: .5rem;
+		}
 
-			.timeline-info p {
-				line-height: 130%;
-				font-size: 20px;
-				margin-bottom: .5rem;
-			}
+		.timeline-info p {
+			line-height: 130%;
+			font-size: 20px;
+			margin-bottom: .5rem;
+		}
 	}
 }
 
@@ -278,7 +278,6 @@ header {
 
 .albums {
 	display: flex;
-
 	flex-direction: column;
 
 	text-align: center;
@@ -382,9 +381,7 @@ header {
 
 /* ---------------------------------------------- SINGLES -------------------------------------------------- */
 
-.most-important-singles, .important-singles {
-	border: 1px solid green;
-
+.most-important-singles, .important-singles,.other-singles {
 	display: flex;
 	flex: 1;
 	
@@ -401,18 +398,6 @@ header {
 		margin-left: 2rem;
 		margin-right: 2rem;
 
-		.card-title {
-			margin: 1rem 1rem 1rem 0rem;
-			font-size: 2rem;
-			text-align: left;
-			text-transform: uppercase;
-		}
-
-		.card-date {
-			margin: .25rem .25rem .25rem 0rem;
-			text-align: left;
-		}
-
 		.single-music {
 			border: 1px solid blue;
 			display: flex;
@@ -427,10 +412,7 @@ header {
 	}
 }
 
-
-
-
-
+/* CAMBIAR TAMAÑO LETRA, NO QUEDA BIEN PARA LA CANCIÓN DE WHY WHY WHY */
 
 
 
