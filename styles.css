@@ -425,7 +425,7 @@ header {
 /* --------------------------------- ON TOUR ------------------------------- */
 
 .ontour {
-	height: 200vh;
+	height: 300vh;
 
 	.tour {
 		display: flex;
@@ -435,16 +435,148 @@ header {
 			margin: auto;
 			flex: 1;
 			flex-direction: column;
-			margin-right: 3rem;
+			margin-right: 4rem;
+
+			img {
+				display: flex;
+				margin: auto;
+				height: 900px;
+				width: 770px;
+			}
+
+			.tour-content {
+				margin-bottom: 1rem;
+			}
 
 
 			.tickets {
 				display: flex;
-				flex-direction: column;
+				flex-direction: row;
+				flex: 1;
+				justify-content: space-between;
+				margin-top: 2.5rem;
+
 				
 
+				.ticket{
+					color: white;
+				}
+				
+				.top-ticket{
+					border: 1px solid var(--light);
+					width: 250px;
+					height: 250px;
+					
+					border-radius: 8px;
+
+					display: flex;
+					position: absolute;
+
+					z-index: 1;
+				}
+
+				.top-ticket-philippines {
+					background-image: url(assets/img/araneta-coliseum.jpg);
+					background-repeat: no-repeat;
+					background-size: 100%;
+				}
+
+				.top-ticket-tokyo {
+					background-image: url(assets/img/toyota-tokyo.jpg);
+					background-repeat: no-repeat;
+					background-size: 100%;
+				}
+
+				.top-ticket-us {
+					background-image: url(assets/img/intuit-dome.jpg);
+					background-repeat: no-repeat;
+					background-size: 100%;
+				}
+
+				.top-ticket-content {
+					background-color: rgba(0, 0, 0, .75);
+					font-size: .8rem;
+					margin-top: 75%;
+
+					display:flex;
+					flex: 1;
+					flex-direction: column;
+
+					justify-content:center;
+					align-items:center;
+
+					
+				}
+
+				.bottom-ticket{
+					border: 1px solid var(--light);
+					width: 250px;
+					height: 125px;
+					border-radius: 8px;
+					position: relative;
+					transition:
+						margin-left 0.4s ease-in-out,
+						margin-top 0.3s ease-in-out 0.4s;
+					margin-top: 50%;
+					padding-top: 20px;
+					text-align: center;
+				}
+
+				.ticket:hover .bottom-ticket{
+					margin-top: 95%;
+					transition:
+						margin-top 0.4s ease-in-out,
+						margin-left 0.3s ease-in-out 0.4s;
+				}
+
+				.bottom-ticket-title {
+					font-size: 18px;
+					font-weight: bold;
+				}
+
+				.bottom-ticket-content {
+					font-size: 15px;
+				}
+
+
+				/* Esto es lo del - 1 + */
+
+
+				.ticket-wrapper {
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+				}
+
+				.ticket-counter {
+					display: flex;
+					flex-direction: row;
+					gap: 15px;
+					padding: .25rem;
+					background: #666;
+					border-radius: .75rem;
+				
+					
+				}
+
+				.ticket-counter-score, .ticket-btn {
+					font-size: 14px;
+				}
+
+				.ticket-btn {
+					border: none;
+					background: transparent;
+					border-radius: .25rem;
+					color: var(--light);
+				}
+
+				.ticket-btn:hover{
+					background-color: var(--light);
+					cursor: pointer;
+				}
+
+
 				.city {
-					border: 1px solid yellowgreen;
 					background-color: rgb(61, 83, 121);
 					padding: .75rem;
 					margin: .75rem 0rem;
@@ -462,22 +594,32 @@ header {
 			}
 			
 		}
-
-
-		.magic2-tour img {
-			display: flex;
-			margin: auto;
-			height: 900px;
-			width: 770px;
-		}
 	}
 }
 
+.first-tour-title {
+	margin-top: 12rem;
+	margin-bottom: 5rem;
+}
 
+.first-tour {
+	margin-left: 10rem;
 
+	display: flex;
+	flex: 1;
 
+	.first-tour-content {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		justify-content: center;
+		margin: 5rem;
 
-
+		p {
+			padding: .5rem;
+		}
+	}
+}
 
 
 
