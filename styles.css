@@ -112,11 +112,11 @@ header {
 
 .hero-content {
 	height: 140vh;
-	margin-bottom: 10rem;
+	margin-bottom: 5rem;
 
 	
 	.hero-title {
-		margin-top: 8rem;
+		margin-top: 4.5rem;
 		padding-left: 5.75rem;
 		margin-bottom: 3.5rem;
 	}
@@ -243,7 +243,7 @@ header {
 }
 
 .interludio {
-	height: 150vh;
+	height: 145vh;
 
 	img {
 		width: 100%;
@@ -258,7 +258,7 @@ header {
 /* -------------------------------------------------- ALBUMS ---------------------------------------------------------------------- */
 
 .discography {
-	height: 850vh;
+	height: 1225vh;
 }
 
 .discography-title {
@@ -603,15 +603,17 @@ header {
 }
 
 .first-tour {
-	margin-left: 10rem;
-
 	display: flex;
-	flex: 1;
+	flex-direction: column;
+
+	video {
+		margin: auto;
+	}
 
 	.first-tour-content {
 		display: flex;
 		flex: 1;
-		flex-direction: column;
+		flex-direction: row;
 		justify-content: center;
 		margin: 5rem;
 
@@ -621,9 +623,15 @@ header {
 	}
 }
 
+.merchandising {
+	height: 200vh;
 
+	.merchandising-products {
+		display: flex;
 
-
+		
+	}
+}
 
 
 
