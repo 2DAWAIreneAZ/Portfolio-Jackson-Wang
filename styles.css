@@ -24,6 +24,8 @@
 
 :root {
 	--light: rgba(255,255,255, 1);
+	--carousel-width: 400px;
+	--carousel-height: 400px;
 }
 
 body, html {
@@ -628,10 +630,103 @@ header {
 
 	.merchandising-products {
 		display: flex;
+		padding-top: 3.5rem;
 
+		.carousel {
+			position: relative;
+			width: calc(var(--carousel-width) * 3);
+			margin: auto;
+			overflow: hidden;
+		}
 		
+		.slides {
+			display: flex;
+			transition: transform 0.5s ease-in-out;
+		}
+		
+		.slide {
+			width: var(--carousel-width);
+			height: var(--carousel-height);
+			flex-shrink: 0;
+			text-align: center;
+			font-size: 2rem;
+		}
+		
+		.carousel input {
+			display: none;
+		}
+		
+		#slide1:checked ~ .slides {
+			transform: translateX(calc(var(--carousel-width)*0));
+		}
+		
+		#slide2:checked ~ .slides {
+			transform: translateX(calc(var(--carousel-width)*-1));
+		}
+		
+		#slide3:checked ~ .slides {
+			transform: translateX(calc(var(--carousel-width)*-2));
+		}
+
+		#s1 {
+				background-image: url(assets/img/product1.jpg);
+				background-size: 100%;
+				background-repeat: no-repeat;
+				background-position: center;
+		
+		}
+		
+		#s2 {
+				background-image: url(assets/img/product2.jpg);
+				background-size: 100%;
+				background-repeat: no-repeat;
+				background-position: center;
+		}
+		
+		#s3 {
+				background-image: url(assets/img/product3.png);
+				background-size: 100%;
+				background-repeat: no-repeat;
+				background-position: center;
+		}
+		
+		#s4 {
+				background-image: url(assets/img/product4.jpg);
+				background-size: 100%;
+				background-repeat: no-repeat;
+				background-position: center;
+		}
+		
+		#s5 {
+				background-image: url(assets/img/product5.jpg);
+				background-size: 100%;
+				background-repeat: no-repeat;
+				background-position: center;
+		}
+		
+		.navigation {
+			display: flex;
+			justify-content: center;
+			margin-top: 1rem;
+		}
+		
+		.navigation label {
+			width: 10px;
+			height: 10px;
+			margin: 0 5px;
+			background: #ccc;
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background 0.3s;
+		}
+		
+		input[type="radio"]:checked + label {
+			background: #333;
+		}
 	}
 }
+
+
 
 
 
