@@ -24,6 +24,7 @@
 
 :root {
 	--light: rgba(255,255,255, 1);
+	--footer-color: rgba(156, 41, 41, 1);
 	--carousel-width: 400px;
 	--carousel-height: 400px;
 }
@@ -259,10 +260,6 @@ header {
 
 /* -------------------------------------------------- ALBUMS ---------------------------------------------------------------------- */
 
-.discography {
-	height: 1225vh;
-}
-
 .discography-title {
 	margin-bottom: 2.5%;
 }
@@ -427,7 +424,11 @@ header {
 /* --------------------------------- ON TOUR ------------------------------- */
 
 .ontour {
-	height: 300vh;
+	height: 465vh;
+
+	.rn-tour-title {
+		padding-top: 4rem;
+	}
 
 	.tour {
 		display: flex;
@@ -597,7 +598,18 @@ header {
 			
 		}
 	}
+
+	.resume-tour {
+		display: flex;
+		padding-top: 7.5rem;
+
+		video {
+			margin: auto;	
+		}
+	}
+
 }
+
 
 .first-tour-title {
 	margin-top: 12rem;
@@ -764,11 +776,40 @@ header {
 			float: right;
 			height: 50px;
 			width: 100px;
+			text-transform: uppercase;
+			font-size: 16px;
 		}
 	}
 }
 
 /* ------------------------------------- FOOTER -------------------------------------------- */
 
-
-
+.bg-photo {
+	height: 60vh;
+	overflow-x: hidden;
+	background-color: var(--footer-color);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+	.footer-nav {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		line-height: 2.5rem;
+	}
+	
+	.brand {
+		padding: 3rem;
+	}
+	
+	li {
+		text-transform: uppercase;
+		list-style: none;
+		
+		a {
+			text-decoration: none;
+			color: var(--light);
+		}
+	}
+}	
