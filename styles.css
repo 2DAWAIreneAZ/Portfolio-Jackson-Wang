@@ -626,7 +626,7 @@ header {
 }
 
 .merchandising {
-	height: 200vh;
+	height: 100vh;
 
 	.merchandising-products {
 		display: flex;
@@ -650,6 +650,10 @@ header {
 			flex-shrink: 0;
 			text-align: center;
 			font-size: 2rem;
+
+			background-size: 90%;
+			background-repeat: no-repeat;
+			background-position: center;
 		}
 		
 		.carousel input {
@@ -670,38 +674,22 @@ header {
 
 		#s1 {
 				background-image: url(assets/img/product1.jpg);
-				background-size: 100%;
-				background-repeat: no-repeat;
-				background-position: center;
-		
 		}
 		
 		#s2 {
 				background-image: url(assets/img/product2.jpg);
-				background-size: 100%;
-				background-repeat: no-repeat;
-				background-position: center;
 		}
 		
 		#s3 {
 				background-image: url(assets/img/product3.png);
-				background-size: 100%;
-				background-repeat: no-repeat;
-				background-position: center;
 		}
 		
 		#s4 {
 				background-image: url(assets/img/product4.jpg);
-				background-size: 100%;
-				background-repeat: no-repeat;
-				background-position: center;
 		}
 		
 		#s5 {
 				background-image: url(assets/img/product5.jpg);
-				background-size: 100%;
-				background-repeat: no-repeat;
-				background-position: center;
 		}
 		
 		.navigation {
@@ -726,9 +714,61 @@ header {
 	}
 }
 
+/* ---------------------------------------- CONTACT --------------------------------------------- */
 
+.contact {
+	height: 100vh;
 
+	.contact-content {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		margin: auto;
 
+		.input-sm {
+			height: 40px;
+			margin: .75rem;
+		}
+
+		.input-lg {
+			height: 100px;
+			vertical-align: top;
+			margin: .75rem;
+		}
+		
+		textarea {
+			font-family: inherit;
+			resize: none;
+		}
+
+	}
+
+	.contact-submit {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem;
+
+		
+		.contact-privacy {
+			display: flex;
+			align-items: center;
+			font-size: 12px;
+
+			input {
+				margin-right: .5rem;
+			}
+		}
+
+		button {
+			float: right;
+			height: 50px;
+			width: 100px;
+		}
+	}
+}
+
+/* ------------------------------------- FOOTER -------------------------------------------- */
 
 
 
