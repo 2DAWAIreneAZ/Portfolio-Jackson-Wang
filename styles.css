@@ -25,8 +25,8 @@
 :root {
 	--light: rgba(255,255,255, 1);
 	--footer-color: rgba(156, 41, 41, 1);
-	--carousel-width: 400px;
-	--carousel-height: 400px;
+	--carousel-width: 550px;
+	--carousel-height: 550px;
 }
 
 body, html {
@@ -36,20 +36,23 @@ body, html {
 	background-size: cover;
 
 	font-family: "Saira";
-	font-size: 24px;
+	font-size: 1.25rem;
 	color: var(--light);
 } 
 
 h1 {
 	font-family: "Semakin";
-	font-size: 90px;
+	font-size: clamp(0.75rem, -0.25rem + 88.889vw, 4.75rem);
+
+	text-transform: uppercase;
 }
 
 h2 {
+	font-size: clamp(0.75rem, -0.063rem + 72.222vw, 4rem);
+	font-weight: 550;
+
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 72px;
-	font-weight: 550;
 }
 
 header {
@@ -78,7 +81,7 @@ header {
 
 		.brand {
 			font-family: "Semakin";
-			font-size: 48px;
+			font-size: 2.5rem;
 
 			display: flex;
 			text-align: center;
@@ -91,7 +94,6 @@ header {
 		
 		.main-nav {
 			font-family: "Saira";
-			font-size: 24px;
 			
 			list-style: none;
 
@@ -114,8 +116,7 @@ header {
 }
 
 .hero-content {
-	height: 140vh;
-	margin-bottom: 5rem;
+	margin-bottom: 8rem;
 
 	
 	.hero-title {
@@ -125,21 +126,14 @@ header {
 	}
 	
 	.hero-img {
-		height: 1033.4481px;
-		width: 1561.5584px;
-		
-		overflow: hidden;
+		height: auto;
+		width: 85%;
 		
 		margin: auto;
-		
-		
-		img {
-			height: 1867.3636px;
-			width: 1561.5584px;
-			
-			margin-top: -416px;
-			margin-bottom: -416px;
-		}
+
+		display: block;
+		object-fit: cover;
+		object-position: center;
 	}
 }
 
@@ -151,14 +145,19 @@ header {
 	}
 
 .biography {
-	height: 270vh;
 	
 	.biography-part1 {
 		margin-bottom: 10rem;
 		display: flex;
-
+		
 		.biography-content1 {
 			flex: 1;
+
+			flex-direction: column;
+
+			justify-content: center;
+			align-items: center;
+			display: block;
 
 			p {
 				padding: 1rem 4rem .5rem 0rem;
@@ -166,10 +165,19 @@ header {
 		}
 	
 		.biography-img1 {		
-			text-align: center;
-	
 			flex: 1;
+
 			
+			img {
+				height: auto;
+				width: 75%;
+				
+				margin: auto;
+
+				display: block;
+				object-fit: cover;
+				object-position: center;
+			}
 		}
 
 	}
@@ -179,22 +187,25 @@ header {
 		
 		.biography-content2 {
 			flex: 1;
-
-			justify-content: center;
-
+			
 			p {
-				padding: .7rem 1rem .5rem 4rem;
+				padding: 1rem 0rem .5rem 6rem;
 			}
 		}
-	
+		
 		.biography-img2 {
-			height: 1100px;
 			flex: 1;
-
-			text-align: center;
+			align-content: center;
 			
 			img {
-				height: 100%;
+				height: auto;
+				width: 75%;
+				
+				margin: auto;
+
+				display: block;
+				object-fit: cover;
+				object-position: center;
 			}
 
 		}
@@ -206,7 +217,7 @@ header {
 /* ---------------------------- TIMELINE --------------------------------- */
 
 .biography-timeline {
-	height: 50vh;
+	padding: 7rem 0 12rem 0;
 	
 	.timeline {
 		border-top: 3px solid var(--light);
@@ -214,7 +225,6 @@ header {
 		display: flex;
 		margin-left: 3rem;
 		margin-right: 3rem;
-
 	}
 
 	.timeline-item {
@@ -233,20 +243,20 @@ header {
 		}
 
 		.timeline-content > p {
-			font-size: 30px;
+			font-size: 1.5rem;
 			margin-bottom: .5rem;
 		}
 
 		.timeline-info p {
 			line-height: 130%;
-			font-size: 20px;
+			font-size: 1rem;
 			margin-bottom: .5rem;
 		}
 	}
 }
 
 .interludio {
-	height: 145vh;
+	margin-bottom: 10rem;
 
 	img {
 		width: 100%;
@@ -254,7 +264,7 @@ header {
 
 	p {
 		text-align: center;
-		font-size: 18px;
+		font-size: 1rem;
 	}
 }
 
@@ -267,7 +277,7 @@ header {
 .latest-release {
 	text-align: center;
 	
-	font-size: 40px;
+	font-size: 2rem;
 
 	margin-bottom: 2rem;
 }
@@ -441,10 +451,14 @@ header {
 			margin-right: 4rem;
 
 			img {
-				display: flex;
+				height: auto;
+				width: 85%;
+				
 				margin: auto;
-				height: 900px;
-				width: 770px;
+
+				display: block;
+				object-fit: cover;
+				object-position: center;
 			}
 
 			.tour-content {
@@ -533,12 +547,12 @@ header {
 				}
 
 				.bottom-ticket-title {
-					font-size: 18px;
+					font-size: 1rem;
 					font-weight: bold;
 				}
 
 				.bottom-ticket-content {
-					font-size: 15px;
+					font-size: .75rem;
 				}
 
 
@@ -563,7 +577,7 @@ header {
 				}
 
 				.ticket-counter-score, .ticket-btn {
-					font-size: 14px;
+					font-size: .75rem;
 				}
 
 				.ticket-btn {
@@ -604,7 +618,14 @@ header {
 		padding-top: 7.5rem;
 
 		video {
-			margin: auto;	
+			height: auto;
+			width: 75%;
+			
+			margin: auto;
+
+			display: block;
+			object-fit: cover;
+			object-position: center;
 		}
 	}
 
@@ -621,7 +642,14 @@ header {
 	flex-direction: column;
 
 	video {
+		height: auto;
+		width: 75%;
+		
 		margin: auto;
+
+		display: block;
+		object-fit: cover;
+		object-position: center;
 	}
 
 	.first-tour-content {
@@ -629,7 +657,7 @@ header {
 		flex: 1;
 		flex-direction: row;
 		justify-content: center;
-		margin: 5rem;
+		margin: 5rem 8rem;
 
 		p {
 			padding: .5rem;
@@ -729,7 +757,8 @@ header {
 /* ---------------------------------------- CONTACT --------------------------------------------- */
 
 .contact {
-	height: 100vh;
+	padding-top: 8rem;
+	margin-bottom: 8rem;
 
 	.contact-content {
 		display: flex;
@@ -765,7 +794,7 @@ header {
 		.contact-privacy {
 			display: flex;
 			align-items: center;
-			font-size: 12px;
+			font-size: .75rem;
 
 			input {
 				margin-right: .5rem;
@@ -777,7 +806,7 @@ header {
 			height: 50px;
 			width: 100px;
 			text-transform: uppercase;
-			font-size: 16px;
+			font-size: .9rem;
 		}
 	}
 }
@@ -785,7 +814,6 @@ header {
 /* ------------------------------------- FOOTER -------------------------------------------- */
 
 .bg-photo {
-	height: 60vh;
 	overflow-x: hidden;
 	background-color: var(--footer-color);
 	background-size: 100%;
@@ -793,14 +821,15 @@ header {
 	background-position: center;
 	
 	.footer-nav {
+		margin-bottom: 2rem;
 		display: flex;
 		flex-direction: column;
 		text-align: center;
-		line-height: 2.5rem;
+		line-height: 3.5rem;
 	}
 	
 	.brand {
-		padding: 3rem;
+		padding: 5rem 0 1.5rem 0;
 	}
 	
 	li {
@@ -813,3 +842,51 @@ header {
 		}
 	}
 }	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+	header nav {
+		border: 1px solid red;
+		flex: 1;
+
+		ul {
+				justify-content: center;
+		}
+
+		ul .menu-off {
+			display: none;
+		}
+	}
+
+		ul li ul li {
+			margin-top: 5px;
+	}
+
+	.burguer {
+		height: 20px;
+		margin: 0;
+	}
+
+	header .branding {
+		flex: 2;
+	}
+	
+}
+
+@media screen and (max-width: 960px) {
+	
+}
