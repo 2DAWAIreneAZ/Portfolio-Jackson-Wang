@@ -1009,6 +1009,10 @@ header {
 /* Lo estoy haciendo como si fuera para mi móvil pero en realidad son para 960px, si va bien tendré q hacer otra media screen más :D */
 
 @media screen and (max-width: 960px) {
+	header {
+		margin: auto;
+	}
+
 	header nav {
 		flex: 1;
 
