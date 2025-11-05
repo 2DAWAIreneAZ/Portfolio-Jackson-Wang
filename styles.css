@@ -5,12 +5,6 @@
 }
 
 @font-face {
-	font-family: "Saira-Italic";
-	src: url(assets/font/Saira-Italic-VariableFont_wdth\,wght.ttf),
-			 url(assets/font/Saira-Italic-VariableFont_wdth_wght.woff);
-}
-
-@font-face {
 	font-family: "Semakin";
 	src: url(assets/font/Semakin.ttf),
 			 url(assets/font/Semakin.woff);
@@ -55,6 +49,23 @@ h2 {
 	text-align: center;
 }
 
+h3 {
+	font-size: 2.75rem;
+	font-weight: 550;
+
+	text-transform: uppercase;
+	text-align: center;	
+}
+
+.burguer-img:hidden {
+	height: 40px;
+	width: 40px;
+	background-image: url(assets/img/burguer.png);
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 header {
 	height: 100px;
 	
@@ -67,7 +78,7 @@ header {
 		display: flex;
 		justify-content: start;
 		align-items: center;
-		flex: 1;
+		flex: 2;
 		
 		.logo {
 			width: 110px;
@@ -90,7 +101,7 @@ header {
 
 	nav {
 		display: flex;
-		flex: 1;
+		flex: 2;
 		
 		.main-nav {
 			font-family: "Saira";
@@ -117,12 +128,16 @@ header {
 
 .hero-content {
 	margin-bottom: 8rem;
-
 	
 	.hero-title {
 		margin-top: 4.5rem;
 		padding-left: 5.75rem;
 		margin-bottom: 3.5rem;
+
+		font-family: "Semakin";
+		font-size: clamp(0.75rem, -0.25rem + 88.889vw, 4.75rem);
+
+		text-transform: uppercase;
 	}
 	
 	.hero-img {
@@ -434,9 +449,9 @@ header {
 /* --------------------------------- ON TOUR ------------------------------- */
 
 .ontour {
-	height: 465vh;
 
 	.rn-tour-title {
+		font-size: 3rem;
 		padding-top: 4rem;
 	}
 
@@ -444,14 +459,20 @@ header {
 		display: flex;
 		margin-top: 5rem;
 
+		.magic2-tour-content {
+			padding-right: 5rem;
+		}
+
+		.magic2-tour {
+			padding-left: 2rem;
+		}
+
 		.magic2-tour, .magic2-tour-content {
 			margin: auto;
 			flex: 1;
 			flex-direction: column;
-			margin-right: 4rem;
 
 			img {
-				height: auto;
 				width: 85%;
 				
 				margin: auto;
@@ -860,8 +881,7 @@ header {
 
 @media screen and (max-width: 1300px) {
 	header nav {
-		border: 1px solid red;
-		flex: 1;
+		flex: .15;
 
 		ul {
 				justify-content: center;
@@ -870,22 +890,136 @@ header {
 		ul .menu-off {
 			display: none;
 		}
-	}
 
-		ul li ul li {
-			margin-top: 5px;
-	}
+		.main-nav {
+			justify-content: end;
+		}
 
-	.burguer {
-		height: 20px;
-		margin: 0;
-	}
+		.burguer {
+			margin: 0;
+			
+			.burguer-img {
+				height: 40px;
+				width: 40px;
+				background-image: url(assets/img/burguer.png);
+				background-size: 100%;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
 
-	header .branding {
-		flex: 2;
-	}
+		}
 	
+	
+	}
+
+	.biography {
+
+		.biography-part1 {
+			flex-direction: column-reverse;
+		
+			.biography-content1 {
+				margin: 0 3rem 3rem 5rem;
+			}
+
+			.biography-img1 {
+				width: 75%;
+				margin: auto;
+			}
+		}
+
+		.biography-part2 {
+			flex-direction: column;
+
+			.biography-content2 {
+				margin: 0 5rem 3rem 0;
+			}
+
+			.biography-img2 {
+				width: 75%;
+				margin: auto;
+			}
+		}
+	}
+
+	.albums {
+		margin: 0;
+
+		.magic2 {
+			flex-direction: column;
+			margin: auto;
+
+			.albums-content {
+				padding: 2rem 0;
+			}
+		}
+
+		.magic, .lostfound, .mirrors {
+			flex-direction: column;
+
+			.card {
+				margin: auto;
+			}
+			
+			.albums-content {
+				padding: 2rem 0;
+			}
+		}
+	}
+
+	.ontour {
+		.tour {
+			flex-direction: column;
+			
+			.magic2-tour {
+				padding: 0;
+				margin: auto;
+			}
+
+			.magic2-tour-content {
+				padding: 4rem 0;
+				margin: 0 6rem;
+			}
+		}
+
+		.first-tour {
+			.first-tour-content {
+				margin: 2.5rem 5rem;
+			}
+		}
+	}
+
+	.merchandising {
+		.merchandising-title {
+			padding-top: 5rem;
+		}
+
+		.merchandising-products {
+			.carousel {
+				
+			}
+		}
+	}
+
+	.contact h2 {
+		margin-bottom: 2rem;
+	}
 }
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 960px) {
 	
