@@ -432,18 +432,12 @@ header {
 			
 		}
 	}
-}
 
-.single-titles {
-	display: flex;
-	margin-top: 3rem;
-	margin-bottom: 1.5rem;
-	
-	p {
+	.title-song {
 		font-size: 1.5rem;
-		display: flex;
-		flex: 1;
-		justify-content: center;
+		margin: auto;
+		align-content: center;
+		padding: 2rem 0;
 	}
 }
 
@@ -1191,7 +1185,7 @@ header {
 	}
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 	.hero {
 
 		.hero-content {
@@ -1323,15 +1317,7 @@ header {
 		}
 	}
 
-	.singles-title {
-		font-size: 1.5rem;
-	}
-
 	.singles {
-		.single-titles p {
-			font-size: 1.25rem;
-		}
-
 		.most-important-singles, .important-singles,.other-singles {
 			display: flex;
 			flex: 1;
@@ -1346,6 +1332,10 @@ header {
 				margin: auto;
 				margin-left: 2rem;
 				margin-right: 2rem;
+
+				p {
+					font-size: 1.25rem;
+				}
 
 				.single-music {
 					display: flex;
@@ -1430,7 +1420,7 @@ header {
 			padding-top: 2rem;
 
 			video {
-				width: 90%;
+				width: 100%;
 				height: auto;
 			}
 		}
