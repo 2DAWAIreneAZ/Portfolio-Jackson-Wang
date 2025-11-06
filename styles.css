@@ -19,8 +19,8 @@
 :root {
 	--light: rgba(255,255,255, 1);
 	--footer-color: rgba(156, 41, 41, 1);
-	--carousel-width: 550px;
-	--carousel-height: 550px;
+	--carousel-width: 500px;
+	--carousel-height: 500px;
 }
 
 body, html {
@@ -181,6 +181,7 @@ header {
 	
 		.biography-img1 {		
 			flex: 1;
+			align-content: center;
 
 			
 			img {
@@ -906,10 +907,7 @@ header {
 				background-repeat: no-repeat;
 				background-position: center;
 			}
-
 		}
-	
-	
 	}
 
 	.biography {
@@ -967,6 +965,10 @@ header {
 	}
 
 	.ontour {
+		.rn-tour-title {
+			font-size: 2rem;
+		}
+
 		.tour {
 			flex-direction: column;
 			
@@ -981,6 +983,10 @@ header {
 			}
 		}
 
+		.first-tour-title {
+			font-size: 2rem;
+		}
+
 		.first-tour {
 			.first-tour-content {
 				margin: 2.5rem 5rem;
@@ -989,16 +995,37 @@ header {
 	}
 
 	.merchandising {
-		/* No sé qué hacer T.T */
-	}
+		.merchandising-products {
+			justify-content: center;
 
+			.carousel {
+				width: calc((var(--carousel-width) - 150px) * 3);
+			
+			
+				.slide {
+					width: calc(var(--carousel-width) - 150px);
+					height: calc(var(--carousel-height) - 150px);
+				}
+
+				#slide1:checked ~ .slides {
+					transform: translateX(calc((var(--carousel-width) - 150px)*0));
+				}
+				
+				#slide2:checked ~ .slides {
+					transform: translateX(calc((var(--carousel-width) - 150px)*-1));
+				}
+				
+				#slide3:checked ~ .slides {
+					transform: translateX(calc((var(--carousel-width) - 150px)*-2));
+				}
+			}
+		}
+
+	}
 	.contact h2 {
 		margin-bottom: 2rem;
 	}
 }
-
-
-/* Lo estoy haciendo como si fuera para mi móvil pero en realidad son para 960px, si va bien tendré q hacer otra media screen más :D */
 
 @media screen and (max-width: 935px) {
 	header {
@@ -1007,12 +1034,9 @@ header {
 
 	header nav {
 		flex: 1;
-
-		border: 1px solid red;
 	}
 	
 	header .branding {
-		border: 1px solid red;
 		flex: 5;
 
 		.brand {
@@ -1133,13 +1157,32 @@ header {
 	}
 
 	.merchandising {
-		/* No sé qué hacer T.T */
+		.merchandising-products {
+			justify-content: center;
+
+			.carousel {
+				width: calc((var(--carousel-width) - 150px * 1.5) * 3);
+			
+			
+				.slide {
+					width: calc(var(--carousel-width) - 150px * 1.5);
+					height: calc(var(--carousel-height) - 150px * 1.5);
+				}
+
+				#slide1:checked ~ .slides {
+					transform: translateX(calc((var(--carousel-width) - 150px * 1.5)*0));
+				}
+				
+				#slide2:checked ~ .slides {
+					transform: translateX(calc((var(--carousel-width) - 150px * 1.5)*-1));
+				}
+				
+				#slide3:checked ~ .slides {
+					transform: translateX(calc((var(--carousel-width) - 150px * 1.5)*-2));
+				}
+			}
+		}
 	}
-
-
-
-
-
 
 	.contact {
 		.contact-content {
@@ -1147,3 +1190,9 @@ header {
 		}
 	}
 }
+
+@media screen and (max-width: 500px) {
+	
+}
+
+
