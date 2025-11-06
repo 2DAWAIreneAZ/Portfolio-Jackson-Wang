@@ -1057,7 +1057,7 @@ header {
 				font-size: 3rem;
 				margin-top: 2rem;
 				margin-bottom: 1.75rem;
-				padding-left: 3rem;
+				padding-left: 1.5rem;
 			}
 		}
 	}
@@ -1192,7 +1192,340 @@ header {
 }
 
 @media screen and (max-width: 500px) {
-	
+	.hero {
+
+		.hero-content {
+			margin: 1rem 0;
+
+			.hero-title {
+				font-size: 2rem;
+				padding-left: 1rem;
+				margin-top: 1.5rem;
+			}
+
+			.hero-img {
+				height: auto;
+				width: 100%;
+
+				display: block;
+			}
+		}
+	}
+
+	.biography-title {
+		font-size: 1.5rem;
+		padding: 1.5rem 0 .5rem 0;
+	}
+	.biography {
+
+		.biography-part1, .biography-part2 {
+			margin-bottom: 2rem;
+
+			.biography-img1, .biography-img2 {
+				height: auto;
+				width: 90%;
+			}
+
+			.biography-content1, .biography-content2 {
+				font-size: medium;
+				margin: .5rem 1rem;
+
+				p {
+					padding: 0rem 1rem .5rem 1rem;
+				}
+			}
+		}
+	}
+
+	.interludio p {
+		font-size: small;
+	}
+
+	.discography-title {
+		font-size: 1.5rem;
+	}
+
+	.latest-release {
+		font-size: 1rem;
+	}
+
+	.albums {
+		.magic2 {
+			.albums-content {
+				padding: 1rem 0;
+			}
+		}
+
+		.album-music {
+			margin-bottom: 5rem;
+		}
+
+		.album-music iframe {
+			width: 75%;
+			margin-top: 2rem;
+			padding: 0rem 1rem 0rem 1rem;
+		}
+
+		.albums-content {
+			font-size: medium;
+			margin: .5rem 1rem;
+			padding: 1rem 0;
+
+			p {
+				padding: 0.8rem;
+			}
+		}
+
+		.magic, .lostfound, .mirrors {
+			display: flex;
+			flex: 1;
+
+			margin: auto;
+
+			.albums-content {
+				padding: 1rem 0;
+			}
+		}
+	}
+
+	.card {			
+		padding-left: .5rem;
+		padding-right: .5rem;
+
+
+		/* Para el primer album (es más grande)*/
+		.card-img-lg {
+			height: 300px;
+			width: 300px;
+		}
+
+		/* Para el resto de albums + los 2 primeros singles importantes */
+		.card-img-md {
+			height: 260px;
+			width: 260px;
+		}
+
+		/* Para el resto de canciones */
+		.card-img-sm {
+			height: 180px;
+			width: 180px;
+		}
+
+		/* Aquí vuelven a presentar los mismos estilos */
+		.card-title {
+			font-size: 1.25rem;
+			
+		}
+
+		.card-date {
+			margin: .25rem .25rem .25rem 0rem;
+			text-align: left;
+		}
+	}
+
+	.singles-title {
+		font-size: 1.5rem;
+	}
+
+	.singles {
+		.single-titles p {
+			font-size: 1.25rem;
+		}
+
+		.most-important-singles, .important-singles,.other-singles {
+			display: flex;
+			flex: 1;
+			
+			margin-bottom: 3.5rem;
+
+			.single {
+				display: flex;
+				flex-direction: column;
+				flex: 1;
+
+				margin: auto;
+				margin-left: 2rem;
+				margin-right: 2rem;
+
+				.single-music {
+					display: flex;
+
+					padding: 2rem;
+				}
+
+				.single-music iframe {
+					width: 100%;
+					
+				}
+			}
+		}
+	}
+
+	.ontour {
+		h2 {
+			font-size: 1.5rem;
+		}
+
+		.rn-tour-title, .first-tour-title {
+			font-size: 1.25rem;
+			padding-top: 1.25rem;
+		}
+
+		.tour {
+			margin-top: 2.5rem;
+			.magic2-tour img {
+				width: 100%;
+			}
+
+			.magic2-tour-content {
+				font-size: medium;
+				padding: 1rem 0;
+				margin: .5rem 1rem;
+
+				.tickets {
+					align-items: center;
+					flex-direction: column;
+
+					.ticket{
+						margin-bottom: 3rem;
+					}
+				
+					.top-ticket{
+						width: 225px;
+						height: 225px;
+						
+					}
+
+					.bottom-ticket{
+						width: 225px;
+						height: 100px;
+
+						margin-top: 50%;
+						padding-top: 15px;
+					}
+
+					.ticket:hover .bottom-ticket{
+						margin-top: 95%;
+					}
+
+					.bottom-ticket-title {
+						font-size: .8rem;
+						font-weight: bold;
+					}
+
+					.bottom-ticket-content {
+						font-size: .6rem;
+					}
+
+					/* Esto es lo del - 1 + */
+
+					.ticket-counter-score, .ticket-btn {
+						font-size: .6rem;
+					}
+				}
+			}
+		}
+
+		.resume-tour, .first-tour {
+			padding-top: 2rem;
+
+			video {
+				width: 90%;
+				height: auto;
+			}
+		}
+
+		.first-tour {
+			.first-tour-content {
+				flex-direction: column;
+				font-size: medium;
+				padding: 1rem 0;
+				margin: .5rem 1rem;
+			}
+		}
+	}
+
+	.merchandising {
+		height: 50vh;
+		.merchandising-title {
+			font-size: 1.5rem;
+		}
+
+		.merchandising-products {
+			justify-content: center;
+
+			.carousel {
+				width: calc((var(--carousel-width) - 150px * 2.3) * 3);
+			
+			
+				.slide {
+					width: calc(var(--carousel-width) - 150px * 2.3);
+					height: calc(var(--carousel-height) - 150px * 2.3);
+				}
+
+				#slide1:checked ~ .slides {
+					transform: translateX(calc((var(--carousel-width) - 150px * 2.3)*0));
+				}
+				
+				#slide2:checked ~ .slides {
+					transform: translateX(calc((var(--carousel-width) - 150px * 2.3)*-1));
+				}
+				
+				#slide3:checked ~ .slides {
+					transform: translateX(calc((var(--carousel-width) - 150px * 2.3)*-2));
+				}
+			}
+		}
+	}
+
+
+	.contact {
+		padding-top: 0;
+		margin-top: 5rem;
+
+		h2 {
+			font-size: 1.5rem;
+		}
+
+		.contact-content {
+			width: 90%;
+
+			.input-sm {
+				height: 30px;
+				font-size: small;
+			}
+
+			textarea {
+				font-size: small;
+			}
+
+			.contact-submit {
+
+				.contact-privacy {
+					font-size: .5rem;
+				}
+
+				button {
+					height: 40px;
+					width: 70px;
+				}
+			}
+		}
+	}
+
+	footer .footer-nav {
+		.brand { 
+			font-size: 2.5rem;
+		}
+
+		ul li {
+			font-size: 1rem;
+		}
+	}
+
+
+
 }
+
 
 
