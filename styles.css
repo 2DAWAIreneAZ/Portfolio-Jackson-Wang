@@ -1512,10 +1512,147 @@ header {
 			font-size: 1rem;
 		}
 	}
-
-
-
 }
+
+@media screen and (max-width: 360px) {
+	header .branding {
+		.brand {
+			font-size: 1.2rem;
+		}
+	}
+
+	.hero {
+		.hero-content {
+			.hero-title {
+				font-size: 1.5rem;
+				padding: 0;
+				margin: .5rem 0 ;
+				text-align: center;
+			}
+		}
+	}
+
+	.biography {
+		.biography-part1, .biography-part2 {
+			.biography-content1, .biography-content2 {
+				font-size: small;
+			}
+		}
+	}
+
+	.albums {
+		.magic2, .magic, .lostfound, .mirrors {
+			.albums-content {
+				font-size: small;
+			}
+		}
+
+		.album-music iframe {
+			width: 100%;
+			margin-top: 1rem;
+		}
+	}
+
+	.singles-title {
+		font-size: 1.5rem;
+	}
+
+	.singles {
+		.most-important-singles, .important-singles, .other-singles {
+			.single {
+				.card-title {
+					font-size: 1rem;
+				}
+
+				.card-date {
+					font-size: .75rem;
+				}
+
+				.single-music {
+					padding: 1.5rem 0;
+
+					iframe {
+						width: 100%;
+				}
+				}
+			}
+		}
+	}
+
+	.ontour {
+		.rn-tour-title, .first-tour-title {
+			font-size: .9rem;
+		}
+
+		.tour {
+			.magic2-tour-content {
+				font-size: small;
+			}
+		}
+
+		.first-tour {
+			.first-tour-content {
+				font-size: small;
+			}
+		}
+	}
+
+	.merchandising {
+		.merchandising-products {
+			.carousel {
+				width: calc((var(--carousel-width) - 150px * 2.6) * 3);
+			
+			
+				.slide {
+					width: calc(var(--carousel-width) - 150px * 2.6);
+					height: calc(var(--carousel-height) - 150px * 2.6);
+				}
+
+				#slide1:checked ~ .slides {
+					transform: translateX(calc((var(--carousel-width) - 150px * 2.6)*0));
+				}
+				
+				#slide2:checked ~ .slides {
+					transform: translateX(calc((var(--carousel-width) - 150px * 2.6)*-1));
+				}
+				
+				#slide3:checked ~ .slides {
+					transform: translateX(calc((var(--carousel-width) - 150px * 2.6)*-2));
+				}
+			}
+		}
+	}
+
+	.contact {
+		margin-top: 3rem;
+
+		.contact-content {
+			.contact-submit button {
+				height: 35px;
+				width: 60px;
+				font-size: .75rem;
+			}
+		}
+	}
+
+	footer .footer-nav {
+		.brand {
+			font-size: 1.75rem;
+			padding: 2rem 0 1rem 0;
+		}
+
+		ul li a {
+			font-size: 1rem;
+		}
+	}
+
+
+
+
+	
+}
+
+
 
 
 
